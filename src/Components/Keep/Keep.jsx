@@ -17,11 +17,11 @@ const opacity = useTransform(scrollY, [600, 900], [0, 1]);
 >
       <motion.div className='z-0'
       >
-      <h1 className='text-5xl md:text-6xl lg:text-6xl font-semibold text-[#f2f4fd] font-merienda px-2 items-center justify-center'>
+      <h1 className='text-4xl md:text-6xl lg:text-6xl font-semibold text-[#f2f4fd] font-merienda px-2 items-center justify-center'>
         Keep everything</h1>
         <br />
         <span>
-          <h1 className='flex text-5xl md:text-6xl lg:text-6xl font-semibold text-[#f2f4fd] font-merienda px-2 items-center justify-center'>
+          <h1 className='flex text-4xl md:text-6xl lg:text-6xl font-semibold text-[#f2f4fd] font-merienda px-2 items-center justify-center'>
             in <FaSnowflake className='px-5 text-accent' size={100}/> one place</h1>
         </span>
             </motion.div>

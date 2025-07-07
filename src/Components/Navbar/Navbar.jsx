@@ -24,28 +24,35 @@ const Navbar = ({ isOpen, setIsOpen }) => {
   ];
 
   return (
-    <header className='relative top-0 left-0 w-full z-40 md:py-5 py-2 px-2'>
+    <header className='relative top-0 left-0 w-full z-40 sm:py-1 md:py-5 py-2 px-2'>
       <div className="mx-auto flex items-center justify-between px-4 py-2">
         <div className='flex items-center gap-3'>
           <FaSnowflake className='text-[#14151f]' size={30} />
-          <p className='text-3xl'>
-            <span className='font-exile italic text-[#14151f] font-semibold'>Drift</span>
-          </p>
+          <p className='hidden md:block md:text-3xl'>
+  <span className='font-exile italic text-[#14151f] font-semibold'>
+    Drift
+  </span>
+</p>
         </div>
-        <div className='pl-25 lg:pl-220'>
-          <button className='font-semibold text-[#14151f] font-poppins rounded-full px-7 py-3 bg-accent hover:bg-accent/40 hover:scale-95 hover:outline-none cursor-pointer'>
-            Download
-          </button>
-        </div>
-        <button
-          className='cursor-pointer focus:outline-none z-50'
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen
-            ? <FiX className='w-12 h-12 p-3 text-black bg-white/80 rounded-full' />
-            : <FiMenu className='w-12 h-12 p-3 text-black bg-white/80 rounded-full' />
-          }
-        </button>
+        <div className="flex items-center gap-2 md:gap-6 ml-auto">
+  {/* Download Button */}
+  <button className="text-sm sm:text-xs md:text-base font-semibold text-[#14151f] font-poppins rounded-full px-4 sm:px-3 py-2 bg-accent hover:bg-accent/40 hover:scale-95 transition-transform cursor-pointer">
+    Download
+  </button>
+
+  {/* Menu Toggle */}
+  <button
+    className="cursor-pointer focus:outline-none z-50"
+    onClick={() => setIsOpen(!isOpen)}
+  >
+    {isOpen ? (
+      <FiX className="w-10 h-10 p-2.5 text-black bg-white/80 rounded-full" />
+    ) : (
+      <FiMenu className="w-10 h-10 p-2.5 text-black bg-white/80 rounded-full" />
+    )}
+  </button>
+</div>
+
       </div>
 
       {/* Dropdown menu */}
