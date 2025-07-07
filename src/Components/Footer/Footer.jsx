@@ -1,3 +1,5 @@
+import { FaSnowflake } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="px-4 py-16">
@@ -67,7 +69,7 @@ export default function Footer() {
         {/* Bottom: Logo + Copyright */}
         <div className="flex flex-col sm:flex-row justify-between items-center border-t pt-6 text-sm text-gray-500">
           <div className="mb-2 sm:mb-0">
-            <img src="src/assets/logo.png" alt="Logo" className="h-6" />
+            <FaSnowflake className="h-8 text-accent" />
           </div>
           <div>&copy; {new Date().getFullYear()} EGO. All rights reserved.</div>
         </div>

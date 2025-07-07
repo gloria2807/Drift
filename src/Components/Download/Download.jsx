@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaSnowflake } from 'react-icons/fa';
+import { FaEdge, FaSnowflake } from 'react-icons/fa';
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Download = () => {
@@ -22,7 +22,7 @@ const Download = () => {
             <div className='pt-10 pb-5 flex items-center justify-center'>
             <motion.button
           className='flex items-center justify-center cursor-pointer w-[300px] h-[100px] font-merienda bg-white rounded-full'>
-            <img src='src/assets/edge.svg' className='w-20' /><p className='px-3'>Download for Edge</p>
+            <FaEdge size={80} className='text-accent' /><p className='px-3'>Download for Edge</p>
           </motion.button>
           </div>
           <p className='flex items-center justify-center'>Also available on other browsers and devices <br/>
